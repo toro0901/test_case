@@ -1,15 +1,13 @@
 # if文課題②
 
 def judge_score(score):
-    #80点以上 → 「優秀です」
     if score >= 80:
-        print("優秀です")
-    #60点以上80点未満 → 「合格です」
+        return "優秀です"
     elif score >= 60 and score < 80:
-        print("合格です")
-    #60点未満 → 「不合格です」
+        return"合格です"
     else:
-        print("不合格です")
+        return "不合格です"
 
-score = 50
-judge_score(score)
+print(judge_score(90)) #優秀です
+print(judge_score(75)) #合格です
+print(judge_score(55)) #不合格です

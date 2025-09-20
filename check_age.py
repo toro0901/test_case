@@ -2,9 +2,9 @@
 
 def check_age(age):
     if age >= 18:
-        print("大人です")
+        return "大人です"
     else:
-        print("未成年です")
+        return "未成年です"
 
-age= 18
-check_age(age)
+print(check_age(19)) #大人です
+print(check_age(17)) #未成年です
